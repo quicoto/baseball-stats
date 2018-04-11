@@ -1,0 +1,18 @@
+[v-cloak] {
+  display: none; }
+
+.custom-body {
+  padding: 3rem 0;
+  background: #e74c3c;
+  font-family: 'Roboto', sans-serif; }
+
+.header-wrapper {
+  margin-bottom: 3rem; }
+
+.header-title, .header-subtitle {
+  color: white; }
+
+.header-title {
+  font-size: 4rem;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 2rem; }

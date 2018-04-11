@@ -1,0 +1,16 @@
+.header {
+  &-wrapper {
+    margin-bottom: 3rem;
+  }
+
+  &-title,
+  &-subtitle {
+    color: white;
+  }
+
+  &-title {
+    font-size: 4rem;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 2rem;
+  }
+}

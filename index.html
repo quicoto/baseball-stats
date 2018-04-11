@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Baseball Stats</title>
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="dist/styles.css">
+</head>
+<body class="custom-body">
+  <main id="app" v-cloak>
+      <b-container v-if="stats">
+          <b-row class="header-wrapper">
+              <b-col md="2">
+                    <b-img rounded="circle" alt="Joan Torres" fluid src="assets/images/profile.jpg" />
+              </b-col>
+              <b-col md="10">
+                  <header class="text-left">
+                    <h1 class="header-title">Joan Torres</h1>
+                    <h2 class="header-subtitle">CB BARCELONA Right Field</h2>
+                </header>
+               </b-col>
+          </b-row>
+
+          <b-row>
+              <b-col sm="12">
+                <vue-chart style="width: 100%;"
+                    chart-type="ColumnChart"
+                    :columns="[{
+                        'type': 'string',
+                        'label': 'Hits'
+                    }, {
+                        'type': 'number',
+                        'label': 'Times'
+                    }, {
+                        'type': 'string',
+                        'role': 'style'
+                    },
+                    {
+                        'type': 'number',
+                        'role': 'annotation'
+                    }]"
+                    :rows="[
+                        ['Base Hit', stats.h, '#2ecc71', stats.h],
+                        ['2 Bases', stats.twobases, '#3498db', stats.twobases],
+                        ['3 Bases', stats.hthreebases, '#9b59b6', stats.hthreebases],
+                        ['Home Runs', stats.hr, '#34495e', stats.hr]
+                    ]"
+                    :options="{
+                        height: 400,
+                        legend: { position: 'none' },
+                        isStacked: false,
+                        vAxis : {textColor: '#ffffff'}
+                    }"
+                ></vue-chart>
+            </b-col>
+          </b-row>
+      </b-container>
+  </main>
+  <script src="dist/bundle.js"></script>
+</body>
+</html>

@@ -1,2 +1,5 @@
-# baseball-stats
-Baseball Stats Visualization
+# Baseball Stats Visualization
+
+- VueJS
+- Vue.js wrapper for Chart.js
+- Bootstrap
