@@ -4,24 +4,58 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Baseball Stats</title>
+  <title>Joan Torres - Baseball Stats</title>
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto" rel="stylesheet">
-  <link rel="stylesheet" href="dist/styles.css">
+  <link rel="stylesheet" href="dist/styles.css?ver=1.0">
 </head>
 <body class="custom-body">
-  <main id="app" v-cloak>
+  <main id="app" v-cloak data-url="assets/data/stats.json">
       <b-container v-if="stats">
-          <b-row class="header-wrapper">
-              <b-col md="2">
-                    <b-img rounded="circle" alt="Joan Torres" fluid src="assets/images/profile.jpg" />
-              </b-col>
-              <b-col md="10">
-                  <header class="text-left">
-                    <h1 class="header-title">Joan Torres</h1>
-                    <h2 class="header-subtitle">CB BARCELONA Right Field</h2>
+        <b-row class="header-wrapper">
+            <b-col md="6">
+                <b-img thumbnail alt="Joan Torres" fluid src="assets/images/profile.jpg" />
+            </b-col>
+            <b-col md="6">
+                <header class="text-left">
+                 <h1 class="header-title text-center">Joan Torres</h1>
                 </header>
-               </b-col>
-          </b-row>
+
+                <section class="overview">
+                    <table class="table table-striped">
+                        <tr>
+                            <td colspan="2" class="text-center">CB Barcelona - No. 4</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="text-center">Outfielder</td>
+                        </tr>
+                        <tr>
+                            <td>Born</td>
+                            <td>26 December 1993 (age {{age}})</td>
+                        </tr>
+                        <tr>
+                            <td>Bats Right</td>
+                            <td>Throws Left</td>
+                        </tr>
+                        <tr>
+                            <td>Height</td>
+                            <td>170cm</td>
+                        </tr>
+                        <tr>
+                            <td>Weight</td>
+                            <td>60Kg</td>
+                        </tr>
+                        <tr>
+                            <td>Professional Debut</td>
+                            <td>Mar 15, 2018</td>
+                        </tr>
+                        <tr>
+                            <td>Salary</td>
+                            <td>- 370€ / year</td>
+                        </tr>
+                    </table>
+                </section>
+            </b-col>
+        </b-row>
 
           <b-row>
               <b-col sm="12">
@@ -58,6 +92,6 @@
           </b-row>
       </b-container>
   </main>
-  <script src="dist/bundle.js"></script>
+  <script src="dist/bundle.js?ver=1.0"></script>
 </body>
 </html>

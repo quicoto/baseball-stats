@@ -1,16 +1,15 @@
 .header {
   &-wrapper {
-    margin-bottom: 3rem;
-  }
-
-  &-title,
-  &-subtitle {
-    color: white;
+    margin-bottom: 15px;
   }
 
   &-title {
-    font-size: 4rem;
+    font-size: 60px;
     font-family: 'Playfair Display', serif;
-    margin-bottom: 2rem;
+    margin-top: 15px;
+
+    @media screen and (min-width: 768px) {
+      margin-top: 0;
+    }
   }
 }

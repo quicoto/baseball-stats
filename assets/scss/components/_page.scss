@@ -3,7 +3,12 @@
 }
 
 .custom-body {
-  padding: 3rem 0;
+  padding: 15px 0;
+  color: white;
   background: #e74c3c;
   font-family: 'Roboto', sans-serif;
+
+  @media screen and (min-width: 768px) {
+    padding: 30px 0;
+  }
 }

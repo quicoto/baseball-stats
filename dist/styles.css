@@ -2,17 +2,33 @@
   display: none; }
 
 .custom-body {
-  padding: 3rem 0;
+  padding: 15px 0;
+  color: white;
   background: #e74c3c;
   font-family: 'Roboto', sans-serif; }
+  @media screen and (min-width: 768px) {
+    .custom-body {
+      padding: 30px 0; } }
 
 .header-wrapper {
-  margin-bottom: 3rem; }
-
-.header-title, .header-subtitle {
-  color: white; }
+  margin-bottom: 15px; }
 
 .header-title {
-  font-size: 4rem;
+  font-size: 60px;
   font-family: 'Playfair Display', serif;
-  margin-bottom: 2rem; }
+  margin-top: 15px; }
+  @media screen and (min-width: 768px) {
+    .header-title {
+      margin-top: 0; } }
+
+.overview {
+  font-size: 19px;
+  margin-top: 30px; }
+  .overview td {
+    width: 50%; }
+  .overview tr > td {
+    text-align: left; }
+    .overview tr > td:first-child {
+      text-align: right; }
+  .overview tr:last-child td {
+    border-bottom: 1px solid #dee2e6; }
